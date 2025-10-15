@@ -87,6 +87,20 @@ nav{
     align-self: center;
 }
 
+#subcribe{
+    background: linear-gradient(rgb(60, 218, 73), var(--green-color));
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.4s;
+    color: var(--black-font);
+}
+
+#subcribe:active{
+    scale: 0.95;
+}
+
+
 /********************* Main ********************/
 main{
     margin: 0 var(--space-10px);
@@ -438,6 +452,9 @@ main{
     display: flex;
     overflow-x: auto;
     justify-self: center;
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
 }
 
 .carousel::-webkit-scrollbar{
@@ -455,8 +472,9 @@ main{
 
 .image{
     flex: 0 0 5em;
-    width: 60px;
-    height: 80px;
+    width: 140px;
+    height: 150px;
+    padding-right: 1em;
 }
 
 @keyframes spin {

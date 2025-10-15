@@ -52,6 +52,8 @@ header{
     }
 }
 
+/************ Navigation *************/
+
 nav{
     justify-items: right;
     align-items: center;
@@ -73,6 +75,19 @@ nav{
     align-items: center;
     align-content: center;
     align-self: center;
+}
+
+#subcribe{
+    background: linear-gradient(rgb(60, 218, 73), var(--green-color));
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.4s;
+    color: var(--black-font);
+}
+
+#subcribe:active{
+    scale: 0.95;
 }
 
 

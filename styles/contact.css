@@ -1,0 +1,578 @@
+:root{
+  --padding-left-right: 10px;
+  --dark-mode-font: #fff;
+  --light-header-footer-clr: rgb(122, 122, 212);
+  --dark-h-f-section-clr: rgb(25 25 51 / 80%);
+  --light-font-clr: #191933;
+}
+
+/**************** Light Mode ****************/
+.light_background h1, .light_backgroundd h2, .light_background h3, .light_background p, .light_background a{
+  color: var(--light-font-clr);
+}
+
+/****************** Dark Mode ********************/
+.dark_background h1, .dark_background h2, .dark_background h3, .dark_background p, .dark_background a{
+  color: var(--dark-mode-font);
+}
+
+.dark_background{
+  background-image: url(../images/IMG_20250516_214408.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.list section{
+    background-color: var(--dark-h-f-section-clr);
+}
+.list section:nth-child(even) {
+	background-color: rgb(29, 29, 73, 0.8);
+}
+.dark_background #container #join_button{
+  background-color: var(--dark-h-f-section-clr);
+}
+
+.dark_background .event_grid section h2{
+  background-color: var(--dark-h-f-section-clr);
+}
+
+.dark_background header{
+  background-color: var(--dark-h-f-section-clr);
+}
+
+.dark_background .info_section section{
+  background-color: var(--dark-h-f-section-clr);
+}
+
+.dark_background .levels dialog{
+  h2{
+    color: #000;
+  }
+
+  p{
+    color: #000;
+  }
+}
+
+.dark_background footer{
+  background-color: var(--dark-h-f-section-clr);
+}
+
+/**************** Header ***********************/
+h1, h2, h3, h4{
+    font-family: 'Montserrat','Roboto', 'Open Sans';
+}
+
+p{
+    font-family: 'Open Sans', sans-serif, verdana;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif, verdana;
+}
+
+table, .current_weather ul, .weather_forecast ul{
+  font-family: 'Open Sans', sans-serif, verdan;
+
+}
+
+header{
+  display: grid;
+  grid-template: 1fr / minmax(44px, 65px) auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--light-header-footer-clr);
+  overflow-y: hidden;
+}
+
+header h2{
+  padding-left: var(--padding-left-right);
+  margin: 0 auto;
+}
+
+.logo{
+  width: 80%;
+  height: auto;
+  padding-left: var(--padding-left-right);
+}
+
+/****************** Navigation *****************/
+
+
+#subcribe{
+    background: linear-gradient(rgb(60, 218, 73), var(--green-color));
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.3);
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.4s;
+    color: var(--black-font);
+}
+
+#subcribe:active{
+    scale: 0.95;
+}
+
+/****************** Main ********************/
+
+main{
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.application{
+    margin: var(--padding-left-right);
+    width: 95%;
+    max-width: 600px;
+    justify-self: left;
+
+    h2{
+      margin-top: 10px;
+    }
+}
+
+fieldset{
+  background-color: var(--light-header-footer-clr);
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+legend{
+    padding: 0 var(--padding-left-right);
+    margin-bottom: var(--padding-left-right);
+    background-color: #fff;
+    border: #191933 solid 1px;
+}
+
+.application label{
+    display: block;
+    margin-bottom: var(--padding-left-right);
+    white-space: nowrap;
+}
+
+.application label textarea{
+  min-width: 70%;
+  min-height: 80px;
+}
+
+.application label input{
+    display: block;
+    margin-top: 5px;
+}
+
+form input{
+  height: 40px;
+  padding: 2px 0 2px 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:required:valid{
+  border-left: solid green 3.5px;
+}
+
+form input:required:invalid{
+  border-left: solid red 3.5px;
+}
+
+form select{
+  padding: 13px 0;
+}
+
+.submit_btn{
+  margin: auto;
+  border: none;
+  padding: 14px 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  align-content: center;
+  color: #fff;
+  background: linear-gradient(rgb(170, 167, 169), #191933);
+  /* box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.3); */
+  border-radius: 35px;
+}
+
+
+.levels{
+    margin: var(--padding-left-right);
+
+    h2{
+      margin: var(--padding-left-right) auto;
+      width: 80%;
+      max-width: 600px;
+    }
+}
+
+.levels section button:hover{
+  color: #fff;
+}
+
+.levels section{
+  display: grid;
+  grid-template: auto 1fr auto/ 1fr;
+  background-color: #eee;
+  justify-items: center;
+  text-align: center;
+  width: 80%;
+  max-width: 250px;
+  height: fit-content;
+  margin: 20px auto;
+  box-shadow: 3px 1px 6px 2px #616164;
+  border-radius: 25px 20px 40px 15px;
+  padding-bottom: var(--padding-left-right);
+
+  ul{
+    list-style: none;
+    padding: 0;
+    grid-row: 2 / 3;
+    width: 90%;
+    text-align: left;
+    justify-self: left;
+    margin-left: var(--padding-left-right);
+
+    li{
+      padding: 0 0 10px 0;
+      img{
+        float: left;
+        padding-right: var(--padding-left-right);
+      }
+    }
+  }
+
+  h2{
+    font-size: 1rem;
+    padding: var(--padding-left-right);
+    margin-top: 0;
+    width: fit-content;
+    border-radius: 0 0 5px 5px;
+    border: #191933 dashed 1.5px;
+    color: #000;
+  }
+
+  button{
+    display: block;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    align-self: end;
+    margin: auto;
+    z-index: 10;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 20px;
+    transition: 2s;
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+.levels_grid{
+  display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+}
+
+.levels section:nth-child(4){
+  h2{
+    background-color: gold;
+  }
+
+  button{
+    box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.3);
+    background-color: gold;
+  }
+  button:hover{
+    background-color: #000;
+
+  }
+
+}
+.levels section:nth-child(2){
+  h2{
+    background-color: rgb(233, 113, 0);
+  }
+
+  button{
+    box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.3);
+    background-color: rgb(233, 113, 0);
+  }
+  button:hover{
+    background-color: #000;
+
+  }
+}
+.levels section:nth-child(3){
+  h2{
+    background-color: silver;
+  }
+
+  button{
+    box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.3);
+    background-color: silver;
+  }
+  button:hover{
+    background-color: #000;
+
+  }
+}
+.levels section:nth-child(1){
+  h2{
+    background-color: var(--light-header-footer-clr);
+  }
+
+  button{
+    box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.3);
+    background-color: var(--light-header-footer-clr);
+  }
+  button:hover{
+    background-color: #000;
+
+  }
+}
+
+/**************** Button Animation ***************/
+.confe_anime:nth-child(3){
+  background-color: gold;
+  width: 2.5px;
+  height: 20px;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  animation-name: first_confe;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes first_confe {
+  0%{
+    transform: rotateZ(209deg) translateY(0) translateX(-15px);
+  }
+  93%{
+    transform: rotateZ(209deg) translateY(0) translateX(-15px);
+  }
+
+  100%{
+    transform: rotateZ(209deg) translateY(40px) translateX(-15px);
+  }
+}
+
+.confe_anime:nth-child(4){
+  background-color: gold;
+  width: 2.5px;
+  height: 20px;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  animation-name: second_confe;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes second_confe {
+  0%{
+    transform: rotate(150deg) translateX(24px) translateY(0);
+  }
+  93%{
+    transform: rotate(150deg) translateX(24px) translateY(0);
+  }
+
+  100%{
+    transform: rotateZ(150deg) translateX(24px) translateY(45px);
+  }
+}
+
+.confe_anime:nth-child(5){
+  background-color: gold;
+  width: 2.5px;
+  height: 20px;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  animation-name: third_confe;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes third_confe {
+  0%{
+    transform: rotateZ(92deg) translateY(0) translateX(10px);
+  }
+  93%{
+    transform: rotateZ(92deg) translateY(0) translateX(10px);
+  }
+
+  100%{
+    transform: rotateZ(92deg) translateY(-80px) translateX(10px);
+  }
+}
+
+.confe_anime:nth-child(6){
+  background-color: gold;
+  width: 2.5px;
+  height: 20px;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  animation-name: fourth_confe;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes fourth_confe {
+  0%{
+    transform: rotateZ(280deg) translateY(0) translateX(-25px);
+  }
+  93%{
+    transform: rotateZ(280deg) translateY(0) translateX(-25px);
+  }
+
+  100%{
+    transform: rotateZ(280deg) translateY(-90px) translateX(-25px);
+  }
+}
+
+.confe_anime:nth-child(7){
+  background-color: gold;
+  width: 2.5px;
+  height: 12px;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  animation-name: fifth_confe;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes fifth_confe {
+  0%{
+    transform: rotateZ(300deg) translateX(-20px) translateY(0);
+  }
+  93%{
+    transform: rotateZ(300deg) translateX(-20px) translateY(0);
+  }
+
+  100%{
+    transform: rotateZ(300deg) translateX(-20px) translateY(70px);
+  }
+}
+
+.confe_anime:nth-child(8){
+  background-color: gold;
+  width: 2.5px;
+  height: 20px;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  animation-name: sixth_confe;
+  animation-timing-function: ease-out;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes sixth_confe {
+  0%{
+    transform: rotateZ(45deg) translateY(0);
+  }
+  93%{
+    transform: rotateZ(45deg) translateY(0);
+  }
+
+  100%{
+    transform: rotateZ(45deg) translateY(70px);
+  }
+}
+
+/***************** Dialog ******************/
+
+.dialog::backdrop{
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+}
+
+.levels dialog{
+  padding: 0;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(255, 255, 255, 0.7);
+  border: #191933 solid 1.5px;
+  border-radius: 10px;
+
+
+  .wrapper{
+    display: grid;
+    grid-template: auto 1fr / 1fr;
+    position: relative;
+    padding: 16px;
+    background-color: rgb(255, 255, 255, 0.7);
+    height: fit-content;
+
+    h2{
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .close_button{
+      position: absolute;
+      top: 10px;
+      right: 5px;
+      border: none;
+      background-color: rgb(255, 255, 255, 0);
+      cursor: pointer;
+
+      img{
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+}
+
+/****************** Footer *****************/
+
+footer{
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  background-color: var(--light-header-footer-clr);
+}
+
+.left_grid, .right_grid{
+  justify-items: left;
+  align-items: center;
+}
+
+.left_grid p, .left_grid a, .right_grid p, .right_grid a{
+  line-height: .5rem;
+}
+
+.social_grid{
+  display: flex;
+  column-gap: 10px;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+  margin-top: var(--padding-left-right);
+}
+
+.social_grid img{
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+}
+
+.left_grid{
+  padding-left: var(--padding-left-right);
+}
+
+/****************** Form ****************/
+.submitted{
+  width: 80%;
+  max-width: 700px;
+  padding: var(--padding-left-right);
+  background-color: rgb(97, 97, 100, 0.5);
+  margin-left: var(--padding-left-right);
+  border: #000 dashed 2px;
+  border-radius: 5px;
+  text-align: left;
+
+  p{
+    display: block;
+  }
+}
