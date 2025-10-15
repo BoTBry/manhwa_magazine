@@ -118,7 +118,12 @@ main{
 
     h2{
       margin-top: 10px;
+      margin-left: var(--space-10px);
     }
+}
+
+form{
+  margin-left: var(--space-10px);
 }
 
 fieldset{
@@ -128,10 +133,11 @@ fieldset{
 }
 
 legend{
-    padding: 0 var(--padding-left-right);
+    padding: 0 var(--space-10px);
     margin-bottom: var(--padding-left-right);
     background-color: #fff;
     border: #191933 solid 1px;
+    color: #000;
 }
 
 .application label{
@@ -179,9 +185,9 @@ form select{
   text-decoration: none;
   height: 50px;
   align-content: center;
-  color: #fff;
-  background: linear-gradient(rgb(170, 167, 169), #191933);
-  /* box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.3); */
+  color: #000;
+  background: linear-gradient(rgb(60, 218, 73), var(--green-color));
+  box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.3);
   border-radius: 35px;
 }
 

@@ -1,8 +1,125 @@
-@media screen and (max-width: 750px) {
-    /************* Navigation *************/
-    nav{
-        height: 100vh;
+@media screen and (max-width: 1100px) {
+    /* Header */
+    .hero_header h2{
+        font-size: 2.5rem;
     }
+    
+    .red{
+        right: 380px;
+    }
+
+    .yellow{
+        right: 380px;
+
+    }
+
+    .blue{
+        right: 380px;
+
+    }
+}
+
+@media screen and (max-width: 895px) {
+    /* Header */
+    .hero_header h2{
+        font-size: 2.2rem;
+    }
+
+    .hero_header p{
+    top: 70px;
+    }
+    
+    .red{
+        right: 340px;
+        top: 20px;
+    }
+
+    .yellow{
+        right: 340px;
+        top: 45px;
+    }
+
+    .blue{
+        right: 340px;
+        top: 65px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    /* Header */
+    .hero_header h2{
+        font-size: 2rem;
+    }
+    
+    .red{
+        right: 310px;
+    }
+
+    .yellow{
+        right: 310px;
+
+    }
+
+    .blue{
+        right: 310px;
+
+    }
+
+}
+
+@media screen and (max-width: 595px) {
+    /* Header */
+    .hero_img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Header */
+    .hero_header h2{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    /* Header */
+    .hero_header h2{
+        font-size: 0.7rem;
+    }
+
+    .hero_img{
+        width: 250px;
+    }
+
+    .hero_header p{
+    top: 70px;
+    }
+    
+    .red{
+        right: 310px;
+        top: 20px;
+    }
+
+    .yellow{
+        right: 310px;
+        top: 45px;
+    }
+
+    .blue{
+        right: 310px;
+        top: 65px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    /* Header */
+    .hero_header h2{
+        font-size: 2rem;
+    }
+
+    /************* Navigation *************/
+
 
     .navigation{
         display: flex;
