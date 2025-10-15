@@ -101,76 +101,6 @@ nav{
 }
 
 
-/***************** FAQ ***************/
-.question-container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.question{
-  border-bottom: 1px solid #fff;
-}
-
-.question button{
-  width: 100%;
-  height: 35px;
-  background-color: var(--bck-clr);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 15px;
-  border:none;
-  outline: none;
-  font-size: 1.5rem;
-  color: #fff;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-#first{
-  border-top: 1px solid #fff;
-}
-
-.rr{
-    color: red;
-}
-
-.question h5{
-  font-size: 1.3rem;
-  text-align: left;
-}
-
-.question p{
-  color: #fff;
-  font-family: Outfit, sans-serif;
-  font-weight: 200;
-  font-size: 1rem;
-  max-height: 0;
-  opacity: 0;
-  line-height: 1.5;
-  overflow: hidden;
-  transition: all 0.6s ease;
-}
-
-.d-arrow{
-  transition: transform 0.5s ease-in ;
-  color: #fff;
-}
-
-.question p.show{
-  max-height: 200px; 
-  opacity: 1;
-  padding:0px 15px 30px 15px;
-}
-
-.question button .d-arrow.rotate{
-  transform: rotate(180deg);
-}
-
-
 /***************** Main ******************/
 .intro_a{
     width: 100%;
@@ -286,11 +216,82 @@ nav{
     font-size: 1.2rem;
     border: solid 1px #fff;
     transition: 0.4s;
+    max-width: 100px;
 }
 
 .contact a:hover{
     background-color: #fff;
     color: #000;
+}
+
+
+/***************** FAQ ***************/
+.question-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.question{
+  border-bottom: 1px solid #fff;
+}
+
+.question button{
+  width: 100%;
+  height: 35px;
+  background-color: var(--bck-clr);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border:none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#first{
+  border-top: 1px solid #fff;
+}
+
+.rr{
+    color: red;
+}
+
+.question h5{
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.question p{
+  color: #fff;
+  font-family: Outfit, sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+
+.d-arrow{
+  transition: transform 0.5s ease-in ;
+  color: #fff;
+}
+
+.question p.show{
+  max-height: 200px; 
+  opacity: 1;
+  padding:0px 15px 30px 15px;
+}
+
+.question button .d-arrow.rotate{
+  transform: rotate(180deg);
 }
 
 

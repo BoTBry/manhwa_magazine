@@ -448,7 +448,7 @@ main{
 
 /************ carousel *************/
 .carousel{
-    width: 70%;
+    width: 90%;
     display: flex;
     overflow-x: auto;
     justify-self: center;
@@ -467,7 +467,6 @@ main{
     justify-content: center;
     gap: 1em;
     animation: spin 10s infinite linear;
-    padding-right: 1em;
 }
 
 .image{
