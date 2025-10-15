@@ -473,7 +473,6 @@ main{
     flex: 0 0 5em;
     width: 140px;
     height: 150px;
-    padding-right: 1em;
 }
 
 @keyframes spin {

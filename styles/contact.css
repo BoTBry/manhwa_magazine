@@ -1,105 +1,91 @@
 :root{
-  --padding-left-right: 10px;
-  --dark-mode-font: #fff;
-  --light-header-footer-clr: rgb(122, 122, 212);
-  --dark-h-f-section-clr: rgb(25 25 51 / 80%);
-  --light-font-clr: #191933;
+    --normal-font-size: 0.9rem;
+    --h1-header-fs: 2.5rem;
+    --h2-header-fs: 1.3rem;
+    --h3-header-fs: 1.15rem;
+    --large-font-size: 1.05rem;
+    --bck-clr: #02020a;
+    --white-font: #fff;
+    --black-font: #000;
+    --space-10px: 10px;
+    --space-15px: 15px;
+    --space-20px: 20px;
+    --green-color: #2eff2e;
 }
 
-/**************** Light Mode ****************/
-.light_background h1, .light_backgroundd h2, .light_background h3, .light_background p, .light_background a{
-  color: var(--light-font-clr);
+*{
+    color: #fff;
 }
 
-/****************** Dark Mode ********************/
-.dark_background h1, .dark_background h2, .dark_background h3, .dark_background p, .dark_background a{
-  color: var(--dark-mode-font);
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bck-clr);
 }
 
-.dark_background{
-  background-image: url(../images/IMG_20250516_214408.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
-.list section{
-    background-color: var(--dark-h-f-section-clr);
-}
-.list section:nth-child(even) {
-	background-color: rgb(29, 29, 73, 0.8);
-}
-.dark_background #container #join_button{
-  background-color: var(--dark-h-f-section-clr);
-}
-
-.dark_background .event_grid section h2{
-  background-color: var(--dark-h-f-section-clr);
-}
-
-.dark_background header{
-  background-color: var(--dark-h-f-section-clr);
-}
-
-.dark_background .info_section section{
-  background-color: var(--dark-h-f-section-clr);
-}
-
-.dark_background .levels dialog{
-  h2{
-    color: #000;
-  }
-
-  p{
-    color: #000;
-  }
-}
-
-.dark_background footer{
-  background-color: var(--dark-h-f-section-clr);
-}
-
-/**************** Header ***********************/
-h1, h2, h3, h4{
-    font-family: 'Montserrat','Roboto', 'Open Sans';
-}
-
-p{
-    font-family: 'Open Sans', sans-serif, verdana;
-}
-
-a{
-    font-family: 'Open Sans', sans-serif, verdana;
-}
-
-table, .current_weather ul, .weather_forecast ul{
-  font-family: 'Open Sans', sans-serif, verdan;
-
-}
-
+/********************** Header *********************/
 header{
-  display: grid;
-  grid-template: 1fr / minmax(44px, 65px) auto 1fr auto;
-  justify-items: center;
-  align-items: center;
-  background-color: var(--light-header-footer-clr);
-  overflow-y: hidden;
+    display: grid;
+    grid-template: 1fr / auto 1fr;
+    background: rgb(107, 106, 106, 0.5);
+    overflow: hidden;
 }
 
-header h2{
-  padding-left: var(--padding-left-right);
-  margin: 0 auto;
-}
 
+/***************** Logo ****************/
 .logo{
-  width: 80%;
-  height: auto;
-  padding-left: var(--padding-left-right);
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    height: fit-content;
 }
 
-/****************** Navigation *****************/
+.logo img{
+    width: 55px;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    animation-name: logoSpin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
 
+@keyframes logoSpin {
+    0%{
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/******************** Navigation **********************/
+nav{
+    justify-items: right;
+    align-items: center;
+    align-content: center;
+}
+
+.navigation{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    align-self: center;
+}
+
+.navigation a{
+    color: #fff;
+    padding: 22px 30px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
 
 #subcribe{
     background: linear-gradient(rgb(60, 218, 73), var(--green-color));
@@ -113,6 +99,7 @@ header h2{
 #subcribe:active{
     scale: 0.95;
 }
+
 
 /****************** Main ********************/
 
