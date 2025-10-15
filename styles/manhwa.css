@@ -4,6 +4,13 @@
     --h2-header-fs: 1.3rem;
     --h3-header-fs: 1.15rem;
     --large-font-size: 1.05rem;
+    --bck-clr: #02020a;
+    --white-font: #fff;
+    --black-font: #000;
+    --space-10px: 10px;
+    --space-15px: 15px;
+    --space-20px: 20px;
+    --green-color: #2eff2e;
 }
 
 body{
@@ -17,6 +24,12 @@ body{
     background-attachment: fixed;
 }
 
+*{
+    color: #fff;
+}
+
+
+/********************** Header *********************/
 header{
     display: grid;
     grid-template: 1fr / auto 1fr;
@@ -24,6 +37,8 @@ header{
     overflow: hidden;
 }
 
+
+/***************** Logo ****************/
 .logo{
     margin: 0;
     padding: 0;
@@ -52,8 +67,8 @@ header{
     }
 }
 
-/************ Navigation *************/
 
+/******************** Navigation **********************/
 nav{
     justify-items: right;
     align-items: center;
