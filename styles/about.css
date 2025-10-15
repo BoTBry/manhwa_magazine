@@ -224,6 +224,11 @@ nav{
     color: #000;
 }
 
+.contact a:active{
+    background-color: #fff;
+    color: #000;
+}
+
 
 /***************** FAQ ***************/
 .question-container{
