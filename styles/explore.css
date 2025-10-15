@@ -466,7 +466,9 @@ main{
     align-items: center;
     justify-content: center;
     gap: 1em;
+    margin-right: 1em;
     animation: spin 15s infinite linear;
+    animation-delay: 0;
 }
 
 .image{
