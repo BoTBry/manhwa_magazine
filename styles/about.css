@@ -222,12 +222,14 @@ nav{
     font-size: 1.2rem;
     border: solid 1px #fff;
     transition: 0.4s;
+    width: 100%;
     max-width: 100px;
     text-align: center;
 }
 
 .contact a:hover{
     background-color: #fff;
+    
     color: #000;
 }
 
@@ -293,7 +295,6 @@ nav{
 
 .d-arrow{
   transition: transform 0.5s ease-in ;
-  color: #fff;
 }
 
 .question p.show{
